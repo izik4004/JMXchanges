@@ -30,30 +30,35 @@ import LinkedinIcon from '../src/assets/img/copyright/linkedin.svg';
 
 export const header = {
   logo: LogoImg,
-  btnText: 'Request a demo',
+  btnText: 'Get the app',
 };
 
 export const nav = [
-  { name: 'Features', href: '/' },
-  { name: 'About us', href: '/' },
-  { name: 'Pricing', href: '/' },
-  { name: 'Feedback', href: '/' },
+  { name: 'Explore', href: '/' },
+  { name: 'Developers', href: '/' },
+  { name: 'Company', href: '/' }
 ];
 
 export const hero = {
   title: 'Buy Cryptocurrency with zero stress',
   subtitle: 'The fastest way to buy and sell cryptocurrency everyday',
   btnText: 'Send a link',
-  compText: '— Web, iOS and Android',
   image: HeroImg,
 };
+
+export const heroItem = [
+  { name: '$12 Billion', text: '24h trading volume on MJXchange' },
+  { name: '$5 Million', text: 'Registered users who trust MJXchange' },
+  { name: '200+', text: 'Cryptocurrencies listed' },
+];
 
 export const overview = {
   productImg: OverviewProductImg,
   brands: [
     {
-      image: FacebookImg,
-      delay: 300,
+      icon: FacebookImg,
+      title: "Fund your account",
+      text: "Add funds to your crypto account to start trading crypto. You can add funds with a variety of payment methods"
     },
     {
       image: GoogleImg,

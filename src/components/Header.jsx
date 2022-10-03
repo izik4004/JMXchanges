@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { header } from "../data";
-import { HiMenuAlt4} from "react-icons/hi";
-import {MdClose} from "react-icons/md"
+import { HiMenuAlt4 } from "react-icons/hi";
+import { MdClose } from "react-icons/md";
 import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
 
@@ -24,27 +24,34 @@ const Header = () => {
       } py-6 lg:py-4 fixed w-full
   transition-all z-10`}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        <a href="#"
-        className="flex space-x-4 "
-        data-aos='fade-down'
-        data-aos-delay='1200'
-        >
-          <img src={logo} alt="" />
-          <h3 className="text-blue-800 text-center">JMXchange</h3>
-        </a>
-        
-        <div className="hidden lg:flex"
-        data-aos='fade-down'
-        data-aos-delay='1200'>
-          {/* <Nav />  */}
+      <div className="container mx-auto flex justify-between items-center text-center">
+        <div className="flex space-x-5 items-center">
+          <a
+            href="#"
+            className="flex space-x-4 "
+            data-aos="fade-down"
+            data-aos-delay="1200"
+          >
+            <img src={logo} alt="" />
+          </a>
+          <h3 className="text-3xl font-extrabold text-blue-800">JMXchange</h3>
         </div>
-        <button className="btn btn-sm btn-outline hidden lg:flex"
-        data-aos='fade-down'
-        data-aos-delay='1400'
+        <div
+          className="hidden lg:flex space-x-6"
+          data-aos="fade-down"
+          data-aos-delay="1200"
         >
-          {btnText}
-        </button>
+          <Nav />
+          <button
+            className="btn btn-sm btn-outline hidden lg:flex"
+            data-aos="fade-down"
+            data-aos-delay="1400"
+          >
+            {btnText}
+          </button>
+        </div>
+
+        {/* <Nav />  */}
         <button className="lg:hidden" onClick={() => setMobileNav(!mobileNav)}>
           {mobileNav ? (
             <MdClose className="text-3xl text-accent" />
