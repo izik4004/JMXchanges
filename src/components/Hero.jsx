@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className=" min-h-[700px] py-28 lg:py-8">
       <div
-        className="container mx-auto min-h-[900px]
+        className="container mx-auto min-h-[700px]
       flex justify-center items-center"
       >
         <div
@@ -19,14 +19,14 @@ const Hero = () => {
             <h1
               className="title mb-2 lg:mb-5"
               data-aos="fade-down"
-              data-aos-delay="500"
+              // data-aos-delay="500"
             >
               Buy <span className="text-[#120795]">Cryptocurrency</span> with zero stress
             </h1>
             <p
               className="text-md mb-5 lg:mb-10"
               data-aos="fade-down"
-              data-aos-delay="500"
+              // data-aos-delay="500"
             >
               {subtitle}
             </p>
@@ -37,7 +37,8 @@ const Hero = () => {
               data-aos="fade-down"
               data-aos-delay="700"
             >
-              <div className="w-full">
+              <div className="w-full"
+              >
                 <input
                   type="text"
                   placeholder="Email/Phone no"
@@ -58,7 +59,7 @@ const Hero = () => {
 
               {heroItem.map((item, index) => {
                 return (
-                  <div key={index} className="">
+                  <div key={index}>
                     <h3 className="text-xl font-bold">{item.name}</h3>
                     <p className="text-sm">{item.text}</p>
                   </div>

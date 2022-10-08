@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Aos from "aos"
+import 'aos/dist/aos.css'
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Overview from './components/Overview';
@@ -13,7 +15,10 @@ import Cta from './components/Cta';
 import Footer from './components/Footer';
 
 function App() {
-  
+  Aos.init({
+    duration: 1800,
+    offset:100,
+  })
   return (
     <div className='overflow-hidden'>
       <Header />

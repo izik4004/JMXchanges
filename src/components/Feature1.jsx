@@ -13,7 +13,10 @@ const Feature1 = () => {
         </div>
         <div className='flex flex-col lg:gap-x-[30]px py-6
         lg:flex-row lg:text-left'>
-          <div className='flex flex-col space-y-10 align-center order-2 lg:order-1'>
+          <div className='flex flex-col space-y-10 align-center order-2 lg:order-1'
+          data-aos="fade-down-right"
+          // data-aos-delay="500"
+          >
             {features.map((feature, index) => {
               return (
                 <div className='flex space-x-10 items-center' key={index}>
@@ -36,7 +39,7 @@ const Feature1 = () => {
         <button
             className="btn btn-md hidden lg:flex"
             data-aos="fade-down"
-            data-aos-delay="1400"
+            data-aos-delay="500"
           >
             Get Started
           </button>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { header } from "../data";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
+import {GiHamburgerMenu} from "react-icons/gi"
 import MobileNav from "../components/MobileNav";
 import Nav from "../components/Nav";
 
@@ -54,16 +55,16 @@ const Header = () => {
         {/* <Nav />  */}
         <button className="lg:hidden" onClick={() => setMobileNav(!mobileNav)}>
           {mobileNav ? (
-            <MdClose className="text-3xl text-accent" />
+            <MdClose className="text-3xl text-[#120795]" />
           ) : (
-            <HiMenuAlt4 className="text-3xl text-accent" />
+            <GiHamburgerMenu className="text-3xl text-[#120795]" />
           )}
         </button>
 
         <div
           className={`${
             mobileNav ? "left-0" : "-left-full"
-          } fixed top-0 w-[60vw] lg:hidden transition-all bottom-0 bg-pink-400`}
+          } fixed top-0 w-[60vw] lg:hidden transition-all bottom-0 bg-[#120795]`}
         >
           <MobileNav />
         </div>
