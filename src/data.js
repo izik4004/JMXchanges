@@ -12,9 +12,9 @@ import Feature2Img from '../src/assets/img/files/identity.png';
 import Feature3Img from '../src/assets/img/files/mobile.png';
 import Feature4Img from '../src/assets/img/files/trading.png';
 import ArrowRightImg from '../src/assets/img/features/arrow-right.svg';
-import CardIconImg1 from '../src/assets/img/product/cards/icon1.svg';
-import CardIconImg2 from '../src/assets/img/product/cards/icon2.svg';
-import CardIconImg3 from '../src/assets/img/product/cards/icon3.svg';
+import CardIconImg1 from '../src/assets/img/files/data_encrypt.png';
+import CardIconImg2 from '../src/assets/img/files/exchange.png';
+import CardIconImg3 from '../src/assets/img/files/invite.png';
 import Help1 from '../src/assets/img/files/chat.png';
 import Help2 from '../src/assets/img/files/faq2.png';
 import Help3 from '../src/assets/img/files/blog.png';
@@ -107,31 +107,26 @@ export const features = [
   },
 ];
 
-export const product = {
-  title: 'The Product we work with.',
-  subtitle:
-    'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim aumsan nisi, tincidunt vel. Enim ipsum, at quis ullamcorper eget ut.',
-  cards: [
-    {
-      icon: CardIconImg1,
-      title: 'Cross platform',
-      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
-      delay: 200,
-    },
-    {
-      icon: CardIconImg2,
-      title: 'Cloud server',
-      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
-      delay: 400,
-    },
-    {
-      icon: CardIconImg3,
-      title: 'Pure Javascript',
-      subtitle: 'Elit esse cillum dolore eu fugiat nulla pariatur',
-      delay: 600,
-    },
-  ],
-};
+export const offers = [
+  {
+    title: "Advanced Data Encryption",
+    text:
+    "Your transaction data is secured via end-to-end encryption, ensuring that only you have access to your personal information.",
+    image:CardIconImg1
+  },
+  {
+    title: "MJXchange Earn",
+    text:
+    "Hodl your crypto asset and earn more.",
+    image:CardIconImg2
+  },
+  {
+    title: "Invite Friends",
+    text:
+    "Invite your friends with your account ID and enjoy commissions paid to your wallet instantly.",
+    image:CardIconImg3
+  }
+]
 
 export const services = [
   {
