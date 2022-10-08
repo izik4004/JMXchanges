@@ -34,7 +34,7 @@
     @apply py-8 lg:py-[142px];
   }
   input {
-    @apply rounded-md border-blue-900  h-[60px] px-[46px]
+    @apply rounded-md border-blue-900  h-[60px] w-full 
   }
   .btn {
     @apply rounded-lg transition flex justify-center items-center;

@@ -5,7 +5,7 @@ const Feature2 = () => {
   return (
     // <div className='section'>
     <div className='container mx-auto'>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center text-center'>
         <h1 className='title'>Explore Endless possibilities with JMXchange</h1>
         
       </div>

@@ -24,9 +24,7 @@ function App() {
       <Feature2 />
       <Feature3 />
       {/* <Product /> */}
-      <Pricing />
-      <Testimonials />
-      <Cta />
+     
       <Footer />
       {/* <div className='h-[4000px]'></div> */}
     </div>

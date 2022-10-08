@@ -33,22 +33,22 @@ const Hero = () => {
 
             <div
               className="flex items-center max-w-sm  flex-col lg:flex-row
-            lg:max-w-full mx-auto lg:mx-0 gap-y-4 lg:gap-x-6 "
+            lg:max-w-full mx-auto lg:mx-0 gap-y-4 lg:gap-x-4 "
               data-aos="fade-down"
               data-aos-delay="700"
             >
-              <div>
+              <div className="w-full">
                 <input
                   type="text"
                   placeholder="Email/Phone no"
-                  className="text-left  border"
+                  className="text-center border"
                 />
               </div>
-              <div>
+              <div className="w-full">
                 <button
                   className="btn btn-md lg:btn-md
                flex justify-center items-center
-              lg:gap-x-4"
+              lg:gap-x-4 w-full" 
                 >
                   {btnText}
                 </button>
