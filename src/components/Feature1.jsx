@@ -1,25 +1,47 @@
 import React from 'react';
+import image from "../assets/img/files/Group 107.png"
+import { features } from '../data';
 
+console.log(features)
 const Feature1 = () => {
   return (
-    <section className='section'>
-        <div className='container mx-auto'>
-           <div className='flex flex-col items-center py-5'>
-            <h1 className='title'>Manage your crypto portfolio today</h1>
-            <p>JMXchange has a variety of features that makes it the best place to start trading and hodling crypto assets</p>
-           </div>
-            <div className='flex justify-between py-10'>
-                <div className='flex space-x-10'>
-                  <div>hh</div>
-                  <div className='flex flex-col'>
-                    <h1>jlkl</h1>
-                    <p>jkjkljkljs</p>
+    <div>
+      <div className='container mx-auto'>
+        <div className='flex flex-col items-center py-5'>
+          <h1 className='title'>Manage your crypto portfolio today</h1>
+          <p>JMXchange has a variety of features that makes it the best place to start trading and hodling crypto assets</p>
+        </div>
+        <div className='flex flex-col lg:gap-x-[30]px gap-y-8 py-8
+        lg:flex-row lg:text-left'>
+          <div className='flex space-y-5 flex-col'>
+            {features.map((feature, index) => {
+              return (
+                <div className='flex space-x-10' key={index}>
+                  <div>
+                    <img src={feature.image} alt="" />
+                  </div>
+                  <div className=''>
+                    <h1>{feature.title}</h1>
+                    <p className=''>{feature.subtitle}</p>
                   </div>
                 </div>
-                <div>jllkll</div>
-            </div>
+              )
+            })}
+
+          </div>
+          <div className="" data-aos="fade-down" data-aos-delay="800">
+            <img src={image} alt="" />
+          </div>
         </div>
-    </section>
+        <button
+            className="btn btn-sm btn-outline hidden lg:flex"
+            data-aos="fade-down"
+            data-aos-delay="1400"
+          >
+            Get Started
+          </button>
+      </div>
+    </div>
   )
 };
 

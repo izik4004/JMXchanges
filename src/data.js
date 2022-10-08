@@ -7,16 +7,17 @@ import GoogleImg from '../src/assets/img/overview/brands/google.svg';
 import CocaColaImg from '../src/assets/img/overview/brands/coca-cola.svg';
 import LinkedInImg from '../src/assets/img/overview/brands/linkedin.svg';
 import SamsungImg from '../src/assets/img/overview/brands/samsung.svg';
-import Feature1Img from '../src/assets/img/features/feature1-img.svg';
-import Feature2Img from '../src/assets/img/features/feature2-img.svg';
-import Feature3Img from '../src/assets/img/features/feature3-img.svg';
+import Feature1Img from '../src/assets/img/files/person.png';
+import Feature2Img from '../src/assets/img/files/identity.png';
+import Feature3Img from '../src/assets/img/files/mobile.png';
+import Feature4Img from '../src/assets/img/files/trading.png';
 import ArrowRightImg from '../src/assets/img/features/arrow-right.svg';
 import CardIconImg1 from '../src/assets/img/product/cards/icon1.svg';
 import CardIconImg2 from '../src/assets/img/product/cards/icon2.svg';
 import CardIconImg3 from '../src/assets/img/product/cards/icon3.svg';
-import PricingIcon1 from '../src/assets/img/pricing/icon1.svg';
-import PricingIcon2 from '../src/assets/img/pricing/icon2.svg';
-import PricingIcon3 from '../src/assets/img/pricing/icon3.svg';
+import Help1 from '../src/assets/img/files/chat.png';
+import Help2 from '../src/assets/img/files/faq2.png';
+import Help3 from '../src/assets/img/files/blog.png';
 import AvatarImg1 from '../src/assets/img/testimonial/avatar1.png';
 import AvatarImg2 from '../src/assets/img/testimonial/avatar2.png';
 import AvatarImg3 from '../src/assets/img/testimonial/avatar3.png';
@@ -79,35 +80,32 @@ export const overview = {
   ],
 };
 
-export const features = {
-  feature1: {
-    pretitle: 'Alwalys online',
-    title: 'Real-time support with cloud',
+export const features = [
+  {
+    title: 'Fund your account',
     subtitle:
       'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
     image: Feature1Img,
   },
-  feature2: {
-    pretitle: 'Free some cost',
-    title: 'Save cost for you and family',
+ {
+    title: 'Verify your identity',
     subtitle:
       'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
     image: Feature2Img,
   },
-  feature3: {
-    pretitle: 'Use anytime',
-    title: 'Use anytime when you need',
+  {
+    title: 'Mobile App',
     subtitle:
       'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
-    btnLink: 'Learn more',
-    btnIcon: ArrowRightImg,
     image: Feature3Img,
   },
-};
+  {
+    title: 'Start Trading',
+    subtitle:
+    "You're good to go! Buy/sell crypto, set up recurring buys for your investments, and discover what Binance has to offer",
+    image: Feature4Img,
+  },
+];
 
 export const product = {
   title: 'The Product we work with.',
@@ -135,50 +133,29 @@ export const product = {
   ],
 };
 
-export const pricing = {
-  title: 'Choose your flexible plan.',
-  cards: [
-    {
-      icon: PricingIcon1,
-      title: 'Starter Plan',
-      services: [
-        { name: 'Store unlimited data' },
-        { name: 'Export to pdf, xls, csv' },
-        { name: 'Cloud server support' },
-      ],
-      price: '$9.99',
-      userAmount: 'up to 3 user + 1.99 per user',
-      btnText: 'Get this',
-      delay: 300,
-    },
-    {
-      icon: PricingIcon2,
-      title: 'Silver Plan',
-      services: [
-        { name: 'Store unlimited data' },
-        { name: 'Export to pdf, xls, csv' },
-        { name: 'Cloud server support' },
-      ],
-      price: '$19.99',
-      userAmount: 'up to 3 user + 1.99 per user',
-      btnText: 'Get this',
-      delay: 600,
-    },
-    {
-      icon: PricingIcon3,
-      title: 'Diamond Plan',
-      services: [
-        { name: 'Store unlimited data' },
-        { name: 'Export to pdf, xls, csv' },
-        { name: 'Cloud server support' },
-      ],
-      price: '$29.99',
-      userAmount: 'up to 3 user + 1.99 per user',
-      btnText: 'Get this',
-      delay: 900,
-    },
-  ],
-};
+export const services = [
+  {
+    title: "24/7 Chat Support",
+    text:"Get 24/7 chat support with our friendly customer service agents at your service",
+    image: Help1,
+    link:"Chat now"
+
+  },
+  {
+    title: "Faq",
+    text:"View FAQs for detailed instructions on specific features.",
+    image: Help2,
+    link:"Learn more"
+
+  },
+  {
+    title: "Blog",
+    text:"Stay up to date with the latest stories and commentary.",
+    image: Help3,
+    link:"Learn more"
+
+  },
+];
 
 export const testimonials = {
   title: 'We have millions of best wishers',

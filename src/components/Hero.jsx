@@ -5,7 +5,7 @@ import {heroItem} from "../data"
 const Hero = () => {
   const { title, subtitle, btnText, compText, image } = hero;
   return (
-    <section className=" min-h-[900px] py-28 lg:py-8">
+    <div className=" min-h-[900px] py-28 lg:py-8">
       <div
         className="container mx-auto min-h-[900px]
       flex justify-center items-center"
@@ -70,7 +70,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

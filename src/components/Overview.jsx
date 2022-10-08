@@ -8,14 +8,18 @@ const Overview = () => {
           <h3>POpular cryptocurrencies</h3>
           <p>View more markets</p>
         </div>
-        <table>
-            <thead className=''>
+        <div>
+        <table className='w-[100%]'>
+            <tr>
               <th>Name</th>
               <th>Last Price</th>
               <th>24h Change</th>
               <th>Market Cap</th>
-            </thead>
+            </tr>
+            <td>ljlkjlkjkl</td>
+            <td>jkhjkkljlk</td>
         </table>
+        </div>
         </div>
     </section>
   )
