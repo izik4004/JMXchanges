@@ -3,7 +3,7 @@ import { features, services } from '../data';
 
 const Feature2 = () => {
   return (
-    <div className='section'>
+    // <div className='section'>
     <div className='container mx-auto'>
       <div className='flex flex-col items-center'>
         <h1 className='title'>Explore Endless possibilities with JMXchange</h1>
@@ -15,7 +15,7 @@ const Feature2 = () => {
           </div>   
        </div>
       </div>
-      </div>
+      // </div>
     )
 };
 

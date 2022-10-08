@@ -34,7 +34,7 @@
     @apply py-8 lg:py-[142px];
   }
   input {
-    @apply rounded-md border-blue-900  px-4 h-[60px]
+    @apply rounded-md border-blue-900  h-[60px] px-[46px]
   }
   .btn {
     @apply rounded-lg transition flex justify-center items-center;
@@ -43,21 +43,21 @@
     @apply h-[75px] px-6 text-2xl font-normal;
   }
   .btn-md {
-    @apply h-[60px] px-[46px] text-lg font-normal;
+    @apply h-[60px] px-[46px] text-lg font-normal bg-[#120795] text-white;
   }
   .btn-sm {
-    @apply h-[48px] px-[16px] text-lg font-normal;
+    @apply h-[48px] px-[16px] text-lg font-normal ;
   }
-  .btn-accent {
+  /* .btn-accent {
     @apply text-white bg-[#646cffaa] hover:bg-accentHover;
   }
   .btn-white {
     @apply text-accent bg-white hover:bg-white/90;
-  }
+  } */
   .btn-outline {
     @apply bg-transparent text-accent border border-accent hover:bg-accent hover:text-white;
   }
-  .btn-link {
+  /* .btn-link {
     @apply text-accent text-xl lg:text-2xl;
-  }
+  } */
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import { hero } from "../data";
-import {heroItem} from "../data"
+import { heroItem } from "../data"
 
 const Hero = () => {
   const { title, subtitle, btnText, compText, image } = hero;
   return (
-    <div className=" min-h-[900px] py-28 lg:py-8">
+    <div className=" min-h-[700px] py-28 lg:py-8">
       <div
         className="container mx-auto min-h-[900px]
       flex justify-center items-center"
@@ -21,10 +21,10 @@ const Hero = () => {
               data-aos="fade-down"
               data-aos-delay="500"
             >
-              {title}
+              Buy <span className="text-[#120795]">Cryptocurrency</span> with zero stress
             </h1>
             <p
-              className="lead mb-5 lg:mb-10"
+              className="text-md mb-5 lg:mb-10"
               data-aos="fade-down"
               data-aos-delay="500"
             >
@@ -37,32 +37,35 @@ const Hero = () => {
               data-aos="fade-down"
               data-aos-delay="700"
             >
-              <input
-                type="text"
-                placeholder="Email/Phone no"
-                className="text-left py-4 border"
-              />
-
-              <button
-                className="btn btn-md lg:btn-md
-              btn-accent flex justify-center items-center
+              <div>
+                <input
+                  type="text"
+                  placeholder="Email/Phone no"
+                  className="text-left  border"
+                />
+              </div>
+              <div>
+                <button
+                  className="btn btn-md lg:btn-md
+               flex justify-center items-center
               lg:gap-x-4"
-              >
-                {btnText}
-              </button>
+                >
+                  {btnText}
+                </button>
+              </div>
             </div>
-            <span className="flex flex-col lg:flex-row items-center justify-between py-12 ">
-             
-             {heroItem.map((item, index) => {
-              return (
-                <div key={index} className="">
-                    <h2 className="">{item.name}</h2>
-                     <p className="">{item.text}</p>
-                </div>
-              )
-             })}
-             
-             
+            <span className="flex flex-col lg:flex-row items-center justify-between py-12 space-y-10 lg:space-y-0 lg:space-x-8 text-center lg:text-left">
+
+              {heroItem.map((item, index) => {
+                return (
+                  <div key={index} className="">
+                    <h3 className="text-xl font-bold">{item.name}</h3>
+                    <p className="text-sm">{item.text}</p>
+                  </div>
+                )
+              })}
+
+
             </span>
           </div>
           <div className="flex-1" data-aos="fade-down" data-aos-delay="800">

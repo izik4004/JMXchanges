@@ -43,7 +43,7 @@ const Header = () => {
         >
           <Nav />
           <button
-            className="btn btn-sm btn-outline hidden lg:flex"
+            className="btn btn-md hidden lg:flex"
             data-aos="fade-down"
             data-aos-delay="1400"
           >
