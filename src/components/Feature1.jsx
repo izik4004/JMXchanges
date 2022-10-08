@@ -11,9 +11,9 @@ const Feature1 = () => {
           <h1 className='title'>Manage your crypto portfolio today</h1>
           <p>JMXchange has a variety of features that makes it the best place to start trading and hodling crypto assets</p>
         </div>
-        <div className='flex flex-col lg:gap-x-[30]px gap-y-8 py-8
+        <div className='flex flex-col lg:gap-x-[30]px 
         lg:flex-row lg:text-left'>
-          <div className='flex space-y-5 flex-col'>
+          <div className='flex flex-col'>
             {features.map((feature, index) => {
               return (
                 <div className='flex space-x-10' key={index}>

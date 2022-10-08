@@ -1,4 +1,5 @@
 import React from 'react';
+import { features, services } from '../data';
 
 const Feature2 = () => {
   return (
@@ -8,9 +9,11 @@ const Feature2 = () => {
         <h1 className='title'>Explore Endless possibilities with JMXchange</h1>
         
       </div>
-      <div className='flex flex-col lg:gap-x-[30]px gap-y-8
-      lg:flex-row lg:text-left'>
-      </div>
+      <div className='flex space-x-20'>
+          <div>
+              {/* <img src={} alt="" />   */}
+          </div>   
+       </div>
       </div>
       </div>
     )
